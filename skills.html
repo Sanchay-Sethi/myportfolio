@@ -1,0 +1,209 @@
+
+<!-- ===========Boiler plate uses in every HTML FILE=============== -->
+<!-- ============Start from here================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+   
+
+    <script src="js/pace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js" integrity="sha512-5nTpER5HrSoRPyd8szIn2QglL3A54KJs4XOcX3SdHTbLb8TO/5wLqoFYSFGNyhzZy7CFAOZf66X3ikr2v7Bfuw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineLite.min.js" integrity="sha512-UznfQR3LKkKPL0k7HISMqOsmUCjVhjWK8HlR0Pxo5JpjN8eZ8XRwKBRX6OTOQIO0FYOl8Oue+4dG4uHtx1SgKQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js" integrity="sha512-Xc+rcY3w0DANwcFGWBcnBf2dw/p5a4IBAKqHdBJScNOnIH+qoQYE6xuWEdW3wiP7Q+XvL9MacrnKkzoP0Kexug==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/BezierPlugin.min.js" integrity="sha512-H0dUDNDv/uVTWqjYbXjaHb5mILJYXUJ9g36b/Ye/Jt/wk1tVPi8M99AEPbPEBkwL/jysKfLg6sN+kvElcJuESw==" crossorigin="anonymous"></script>
+
+<link rel="shortcut icon" href="media/images/img.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/other.css">
+    <title>Skills| Sanchay Sethi</title>
+</head>
+<body oncontextmenu="return false;">
+
+     <!-- ========Sound Effects========= -->
+     <audio id = "audio1">
+        <source src="media/sounds/click6.wav" type="audio/mpeg">
+    </audio>
+    <audio id = "audio2">
+      <source src="media/sounds/click2.mp3" type="audio/mpeg">
+    </audio>
+    <audio id = "audio3">
+      <source src="media/sounds/ul.mp3" type="audio/mpeg">
+    </audio>
+    <audio id = "audio4">
+      <source src="media/sounds/door.mp3" type="audio/mpeg">
+    </audio>
+
+<!-- Preloader -->
+  <div id = "preloader">
+    <div class="p">
+      <h1 class="glitch">
+        <span aria-hidden="true">Loading</span>
+        Loading
+        <span aria-hidden="true">loading</span>
+      </h1>
+    </div>
+  </div>
+
+  <div class="cursor"></div>
+
+  <div id="progessbar"></div>
+  <div id="scrollpath"></div>
+
+
+    <!-- ========Header========= -->
+
+    <header>
+        <div class="logo"><a href="index.html" style="text-decoration: none; color: aliceblue;">Who I <span style="color: red;">Am?</span> </a></div>
+                    
+          <div class="burger" onclick="toggleClassName();">
+            <div class="center" ></div>    
+          </div>
+</header>
+
+<div class="animatebar"></div>
+
+<div class="sidebar">
+          <ul>
+            <li><a href="index.html"  onclick="toggleClassName();">Home</a></li>
+            <li><a href="skills.html"  onclick="toggleClassName();">Skills</a></li>
+            <li><a href="porfolio.html"  onclick="toggleClassName();">Portfolio</a></li>
+            <li><a href="project.html"  onclick="toggleClassName();">Project</a></li>
+            <li><a href="contact.html" onclick="toggleClassName();">Contact</a></li>
+        </ul>
+</div>
+
+
+
+<!-- ===================End of boiler plate=========================== -->
+
+
+
+<!-- ====Skills section start -->
+
+<section class="skills">
+
+
+<section class="container">
+    <div class="content">
+      <h1>Top 4 Skills in <strike>Mee!</strike></h1>
+      <p>Scroll down slowly To Begin</p>
+      <h2>I am Sanchay Sethi, Full Stack Web developer! I have gained all these skills in recent years. Do refer my portfolio and hire me upon my skills</h2>
+    </div>
+</section>
+<section class="container" style="background-color: rgb(140, 0, 255);">
+    <div class="content">
+        <h1>1. Play With CSS</h1>
+        <p>I have gotten a great experince <br>in working with CSS. I have Sharpen <br> my Skills in CSS, and get used to it</p>
+    </div>
+   
+</section>
+<section class="container">
+   
+    <div class="content">
+       
+       
+        <h1>2. Clean Hand in<br> Javascript</h1>
+        
+    </div>
+    <div class="dark">
+      <button>Light</button>
+    </div>
+    <div class="light">
+      <button>Dark</button>
+    </div>
+    <div class="clock">
+      <h2>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. Read more about JavaScript.</h2>
+      <div class="hour">
+        <div class="hr" id="hr"></div>
+      </div>
+      <div class="min">
+        <div class="mn" id="mn"></div>
+      </div>
+      <div class="sec">
+        <div class="sc" id="sc"></div>
+      </div>
+    </div>
+
+   
+    
+</section>
+<section class="container">
+  <div class="content">
+      <h1>3. App Development</h1>
+      <p>Click Here to see my App Project</p>
+      <a href="project.html"><button>My Project</button></a>
+  </div>
+</section>
+<section class="container animationbox3" >
+    <div class="content">
+        <h1>4. Animate with SVGs</h1>
+        <p>I like to build the minimal design thats why i use<br> most probably the SVGs code for the implementation</p>
+    </div>
+    <img class = "paper-plane" src="media/images/rocket5.png" alt="">
+
+</section>
+
+
+
+<!-- <video id="v0" tabindex="0", autobuffer preload>
+    <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="media/video/video1.mp4"></source>
+</video> -->
+
+</section>
+
+
+ <!-- ========footer========= -->
+
+ <section class="footer">
+    <p class="text" data-sal="slide-up" data-sal-duration="500">&copy; 2021 By <span style="color:rgb(185, 0, 0); font-size: 20px;">&nbsp;  Sanchay Sethi</span></p>
+    <ul>
+        <p class="text" data-sal="slide-down" data-sal-duration="500">Contact me on : </p>
+        <li><a href="https://www.facebook.com/sanchay.sethi.3/" target="_blank"><img src="media/icons/facebook.png" alt=""></a></li>
+        <li><a href="https://www.instagram.com/sethi.sanchay/" target="_blank"><img src="media/icons/instagram.png" alt=""></a></li>
+        <li><a href="https://www.linkedin.com/in/sanchay-sethi/" target="_blank"><img src="media/icons/linkedin.png" alt=""></a></li>
+    </ul>
+</section>
+
+
+<script src="js/sticky.js"></script>
+<!-- <script src="js/videoplay.js"></script> -->
+<script src="js/other.js"></script>
+
+<script>
+  document.onkeydown = function(e){
+    if(event.keyCode ==123){
+      return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+      return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+      return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+      return false;
+    }
+  }
+</script>
+
+
+
+
+</body>
+</html>

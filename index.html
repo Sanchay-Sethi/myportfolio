@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HOME|| Sanchay Sethi</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    
+
+    <script src="js/pace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <link rel="shortcut icon" href="media/images/img.jpeg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body oncontextmenu="return false;">
+
+    <div class="cursor"></div>
+
+  <!-- ========Preloader========= -->
+
+  <div id = "preloader">
+    <div class="p">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div id="para">
+      <h2>Way To Explore!</h2>
+    </div>
+  
+    <button id="enterme" >Enter&nbsp;&nbsp;<span>></span></button>
+    <div id="enterc">
+      <h3>Click here to continue</h3>
+    </div>
+  </div>
+    
+  <!-- ========Sound Effects========= -->
+    <audio id = "audio1">
+        <source src="media/sounds/click6.wav" type="audio/mpeg">
+    </audio>
+    <audio id = "audio2">
+      <source src="media/sounds/click2.mp3" type="audio/mpeg">
+    </audio>
+    <audio id = "audio3">
+      <source src="media/sounds/ul.mp3" type="audio/mpeg">
+    </audio>
+    <audio id = "audio4">
+      <source src="media/sounds/door.mp3" type="audio/mpeg">
+    </audio>
+
+
+  <!-- ========Progressbar========= -->
+
+    <div id="progessbar"></div>
+    <div id="scrollpath"></div>
+
+
+    <!-- ========Header========= -->
+
+    <header>
+              <div class="logo"><a href="index.html" style="text-decoration: none; color: aliceblue;">Who I <span style="color: red;">Am?</span> </a></div>
+                          
+                <div class="burger" onclick="toggleClassName();">
+                  <div class="center" ></div>
+                </div>
+    </header>
+
+    <div class="animatebar"></div>
+
+    <div class="sidebar">
+
+                <ul>
+                  <li><a href="index.html"  onclick="toggleClassName();">Home</a></li>
+                  <li><a href="skills.html"  onclick="toggleClassName();">Skills</a></li>
+                  <li><a href="porfolio.html"  onclick="toggleClassName();">Portfolio</a></li>
+                  <li><a href="project.html"  onclick="toggleClassName();">Project</a></li>
+                  <li><a href="contact.html" onclick="toggleClassName();">Contact</a></li>
+              </ul>
+    </div>
+
+    
+    <!-- ========Main hero page========= -->
+
+      <section class="intro">
+          <div class="text">
+            <div class="text-1">Hello, my name is</div>
+            <h1 class="glitch">
+              <span aria-hidden="true">Sanchay Sethi</span>
+              Sanchay Sethi
+              <span aria-hidden="true">Sanchay Sethi</span>
+            </h1>
+            <div class="text-3">And I'm a <span class="typing" style="color: rgb(184, 20, 20);"></span></div>
+            <div class="btnarr">
+            <button class="btn1" onclick="playbutton()">Hire Me</button>
+            <button class="btn2" onclick="playbutton()">Download Resume</button>
+          </div>
+            
+          </div>
+          <div class="pic"></div>
+      </section>
+
+
+      <!-- ========footer========= -->
+
+      <section class="footer">
+        <p class="text" data-sal="slide-up" data-sal-duration="500">&copy; 2021 By <span style="color:rgb(185, 0, 0); font-size: 20px;">&nbsp;  Sanchay Sethi</span></p>
+        <ul>
+            <p class="text" data-sal="slide-down" data-sal-duration="500">Contact me on : </p>
+            <li><a href="https://www.facebook.com/sanchay.sethi.3/" target="_blank"><img src="media/icons/facebook.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/sethi.sanchay/" target="_blank"><img src="media/icons/instagram.png" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/in/sanchay-sethi/" target="_blank"><img src="media/icons/linkedin.png" alt=""></a></li>
+        </ul>
+    </section>
+
+
+    <!-- ========Javascript========= -->
+
+    <script src="js/app.js"></script>
+
+    <script>
+      document.onkeydown = function(e){
+        if(event.keyCode ==123){
+          return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+          return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+          return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+          return false;
+        }
+      }
+    </script>
+    
+   
+    
+  </body>
+</html>

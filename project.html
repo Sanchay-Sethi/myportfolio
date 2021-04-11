@@ -1,0 +1,234 @@
+<!-- ===========Boiler plate uses in every HTML FILE=============== -->
+<!-- ============Start from here================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+   
+
+    <script src="js/pace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+
+    <link rel="shortcut icon" href="media/images/img.jpeg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/project.css">
+    <title>Projects | Sanchay Sethi</title>
+</head>
+<body oncontextmenu="return false;">
+
+  <div class="nonephone">
+    <h2>Not Applicable for Phones right now</h2>
+    <p>Please Open this in Laptop</p>
+  </div>
+
+     <!-- ========Sound Effects========= -->
+     <audio id = "audio1">
+        <source src="media/sounds/click6.wav" type="audio/mpeg">
+    </audio>
+    <audio id = "audio2">
+      <source src="media/sounds/click2.mp3" type="audio/mpeg">
+    </audio>
+    <audio id = "audio3">
+      <source src="media/sounds/ul.mp3" type="audio/mpeg">
+    </audio>
+    <audio id = "audio4">
+      <source src="media/sounds/door.mp3" type="audio/mpeg">
+    </audio>
+
+<!-- Preloader -->
+  <div id = "preloader">
+    <div class="p">
+      <h1 class="glitch">
+        <span aria-hidden="true">Loading</span>
+        Loading
+        <span aria-hidden="true">loading</span>
+      </h1>
+    </div>
+  </div>
+
+  <div class="cursor"></div>
+
+  <div id="progessbar"></div>
+  <div id="scrollpath"></div>
+
+
+    <!-- ========Header========= -->
+
+    <header>
+        <div class="logo"><a href="index.html" style="text-decoration: none; color: aliceblue;">Who I <span style="color: red;">Am?</span> </a></div>
+                    
+          <div class="burger" onclick="toggleClassName();">
+            <div class="center" ></div>    
+          </div>
+</header>
+
+<div class="animatebar"></div>
+
+<div class="sidebar">
+          <ul>
+            <li><a href="index.html"  onclick="toggleClassName();">Home</a></li>
+        <li><a href="skills.html"  onclick="toggleClassName();">Skills</a></li>
+        <li><a href="porfolio.html"  onclick="toggleClassName();">Portfolio</a></li>
+        <li><a href="project.html"  onclick="toggleClassName();">Project</a></li>
+        <li><a href="contact.html" onclick="toggleClassName();">Contact</a></li>
+        </ul>
+</div>
+
+
+<section class="project">
+  <div class="prh">
+  <h1>In the breeze of my <span>Android</span> Project</h1>
+</div>
+<div style="padding: 50px;">
+<p class="parapr1" style=" font-size: 2rem; z-index: 99999; -webkit-text-fill-color: transparent;-webkit-text-stroke-width: 1.5px; -webkit-text-stroke-color: rgb(255, 255, 255);"><span style="-webkit-text-fill-color: rgb(102, 2, 160); -webkit-text-stroke-width: 1.5px; -webkit-text-stroke-color: rgb(102, 2, 160);">SanMeets:</span> Video Calling App</p><br>
+<p class="parapr2" style="color: aliceblue; font-size: 1.3rem; "> &rarr; &nbsp; Login Page</p><br>
+<p class="parapr3" style="color: aliceblue; font-size: 1.3rem; "> &rarr; &nbsp; SignUp Page</p><br>
+<p class="parapr4" style="color: aliceblue; font-size: 1.3rem; "> &rarr; &nbsp; DashBoard Page</p><br>
+<p class="parapr5" style="color: aliceblue; font-size: 1.3rem; "> &rarr; &nbsp; About App and developer</p><br>
+<p class="parapr6" style="color: aliceblue; font-size: 1.3rem; "> &rarr; &nbsp; Console to start Meeting</p><br>
+<p class="parapr7" style="color: aliceblue; font-size: 1.3rem; "> &rarr; &nbsp; Meeting Space</p>
+</div>
+<div class="phonnee">
+  <svg class = "svgbgg" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID" d=""/></svg>
+    <h2 class="textpr">Scroll Up For the <span>Imagination</span></h2>
+    <div class="box box1"><img src="media/images/mainsc1.png" alt=""></div>
+    <div class="box box2"><img src="media/images/mainsc2.png" alt=""></div>
+    <div class="box box3"><img src="media/images/mainsc3.png" alt=""></div>
+    <div class="box box4"><img src="media/images/mainsc4.png" alt=""></div>
+    <div class="box box5"><img src="media/images/mainsc5.png" alt=""></div>
+    <div class="box box6"><img src="media/images/mainsc6.png" alt=""></div>
+    <div class="box box7"><img src="media/images/mainsc7.png" alt=""></div>
+  </div>
+
+
+</section>
+<section class="infoapp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(150, 97, 255, .6)" fill-opacity="1" d="M0,256L0,0L90,0L90,256L180,256L180,96L270,96L270,64L360,64L360,256L450,256L450,192L540,192L540,192L630,192L630,192L720,192L720,32L810,32L810,256L900,256L900,160L990,160L990,128L1080,128L1080,0L1170,0L1170,64L1260,64L1260,32L1350,32L1350,192L1440,192L1440,0L1350,0L1350,0L1260,0L1260,0L1170,0L1170,0L1080,0L1080,0L990,0L990,0L900,0L900,0L810,0L810,0L720,0L720,0L630,0L630,0L540,0L540,0L450,0L450,0L360,0L360,0L270,0L270,0L180,0L180,0L90,0L90,0L0,0L0,0Z"></path></svg>
+  <h1 style="margin: -100px;">Do Refer its Short Video...</h1>
+  <div class="videoemb">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mbCpI766eC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+</section>
+
+<section class="aboutApp" style=" margin-bottom: 100px;">
+  <div class="aboutcont">
+    <h2>About This App</h2>
+    <pre>SanMeets, A Video calling app (Made in India🇮🇳)
+      The app provides many enhanced features that makes an ease in your realtime conversation.
+      Features:
+      ❤︎ Strong and safe user authentication with OTP system
+      ❤︎ You can set your username any time in the dashboard
+      ❤︎ Delete your account is also in consideration that gives flexibility to the user to delete or remove you account and make a new one
+      ❤︎ Main Feature :
+      i. Two Types of Calling features : Start new meeting or Join with code
+      ii. You can start your new meeting which will generate a unique code for
+      the meeting which you can share to your friends and clients.
+      iii. You can join with an option join with code where you have to just paste
+      the shared code as it is in the field of join with code and start meeting.
+      iv. Chat room Features :
+      ✔︎ Public group chat
+      ✔︎ Screen Sharing
+      ✔︎ Start Live Stream
+      ✔︎ Start Recording
+      ✔︎ Picture in picture mode
+      ✔︎ Share youTube Video and many more features</pre>
+  </div>
+  <div class="downloadapp">
+    <h3>Download My App From Playstore</h3>
+    <a href="https://play.google.com/store/apps/details?id=com.sanchaysethi.sanmeetss" target="_blank"><img src="media/images/playstore.png" alt=""></a>
+  </div>
+ 
+</section>
+
+
+
+
+<section class="footer">
+    <p class="text" data-sal="slide-up" data-sal-duration="500">&copy; 2021 By <span style="color:rgb(185, 0, 0); font-size: 20px;">&nbsp;  Sanchay Sethi</span></p>
+    <ul>
+        <p class="text" data-sal="slide-down" data-sal-duration="500">Contact me on : </p>
+        <li><a href="https://www.facebook.com/sanchay.sethi.3/" target="_blank"><img src="media/icons/facebook.png" alt=""></a></li>
+        <li><a href="https://www.instagram.com/sethi.sanchay/" target="_blank"><img src="media/icons/instagram.png" alt=""></a></li>
+        <li><a href="https://www.linkedin.com/in/sanchay-sethi/" target="_blank"><img src="media/icons/linkedin.png" alt=""></a></li>
+    </ul>
+</section>
+
+<script src="js/project.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script src="js/wavify.js"></script>
+<script src="js/jquery.wavify.js"></script>
+
+<script>
+var myWave = $('#myID').wavify({
+  height: 300,
+  bones: 5,
+  amplitude: 300,
+  color: 'rgba(150, 97, 255, .6)',
+  speed: .10
+});
+
+
+
+gsap.timeline({
+    scrollTrigger: {
+        trigger: ".project",
+        start: "center center",
+        end: "bottom top",
+        scrub:true,
+        markers: false,
+        pin: true
+
+       }
+    })
+    .to(".textpr", {scale: 0})
+    .from(".parapr1", {x: innerWidth*-1})
+    .from(".box1", {x: innerWidth*-1})
+    .from(".parapr1", {opacity:0})
+    .from(".parapr2", {x: innerWidth*-1})
+    .from(".box2", {x: innerWidth*1})
+    .from(".parapr2", {opacity:0})
+    .from(".parapr3", {x: innerWidth*-1})
+    .from(".box3", {x: innerWidth*1})
+    .from(".parapr3", {opacity:0})
+    .from(".parapr4", {x: innerWidth*-1})
+    .from(".box4", {x: innerWidth*1})
+    .from(".parapr4", {opacity:0})
+    .from(".parapr5", {x: innerWidth*-1})
+    .from(".box5", {x: innerWidth*1})
+    .from(".parapr5", {opacity:0})
+    .from(".parapr6", {x: innerWidth*-1})
+    .from(".box6", {x: innerWidth*1})
+    .from(".parapr6", {opacity:0})
+    .from(".parapr7", {x: innerWidth*-1})
+    .from(".box7", {x: innerWidth*1})
+    .from(".parapr7", {opacity:0})
+</script>
+<script>
+  document.onkeydown = function(e){
+    if(event.keyCode ==123){
+      return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+      return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+      return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+      return false;
+    }
+  }
+</script>
+
+
+</body>
+</html>
